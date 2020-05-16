@@ -148,7 +148,9 @@ The mechanism for distoring an image slightly is to generate two noise fields wh
 - [ ] Tesselating image textures  (mirror?)
 - [ ] Get the generator to output the data in a more useful format for downstream consumption
 - [ ] Which image related library to use? OpenCV Pillow, Scipy?
-
+- [ ] Implement unit tests!
+- [ ] Some form of CI (Azure pipelines or Travis? ) to run unit tets
+ 
 
 
 
