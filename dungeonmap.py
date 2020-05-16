@@ -39,6 +39,7 @@ class tilemap:
         '''
         self.createMapSeeded(fillpercent, width, height)
         self.iterate3()
+        return self.height, self.width, self.tiles
 
     def __repr__(self):
         retstring = ""
@@ -130,6 +131,10 @@ class tilemap:
         # afterwards check that the size of the filled area > some percentage if it isn't we didn't pick
         # a good starting point,
         print(".")
+
+    def getMap(self):
+        converted = [[1.0 if j == '#' else 0.0 for j in i] for i in self.tiles]
+        return self.height, self.width, converted
 
     def loadMapFromFile(self, infile):
         ''' loads a map from the given file'''

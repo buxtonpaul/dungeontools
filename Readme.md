@@ -140,14 +140,24 @@ Perhaps also look at [Noisemaker][7]
 
 The mechanism for distoring an image slightly is to generate two noise fields which are used as x and y vectors for deforming the image.
 
-## Other stuff to do
 
+## Status
+Now create a map and shows it in a window rendered with a simple 'sand' texture
+
+- [x] Get the generator to output the data in a more useful format for downstream consumption
+- [x] Which image related library to use? OpenCV Pillow, Scipy?
+
+![Sample][SampleImage]
+
+
+## Other stuff to do
+- [ ] Implement texture API to allow easy creation/use of textures
+- [ ] Prototype distorsion
+- [ ] Add other noise and parametrise it on the API
 - [ ] Other ways of generating dungeons (random walks)
 - [ ] Visualising textures. The set of operations would basically be a graph with nodes for blend etc.
 - [ ] Texture presets
 - [ ] Tesselating image textures  (mirror?)
-- [ ] Get the generator to output the data in a more useful format for downstream consumption
-- [ ] Which image related library to use? OpenCV Pillow, Scipy?
 - [ ] Implement unit tests!
 - [ ] Some form of CI (Azure pipelines or Travis? ) to run unit tets
  
@@ -161,3 +171,4 @@ The mechanism for distoring an image slightly is to generate two noise fields wh
 [5]: http://devmag.org.za/2009/04/25/perlin-noise/
 [6]: https://note.nkmk.me/en/python-opencv-numpy-alpha-blend-mask/
 [7]: https://noisemaker.readthedocs.io/en/latest/
+[sampleimage]: ./output.jpg
